@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body {
+    background-color: #090909;
+    color: white;
+    background-image: url(../images/background/WhatsApp\ Image\ 2026-05-12\ at\ 19.36.59.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.logo-text{
+    font-size: 60px;
+}
+
+.logo-subtitle{
+    font-size: 13px;
+    color: #CC9B69;
+    letter-spacing: 1px;
+}
+
+.gold-letter{
+    color: #CC9B69;
+}
+
+.welcome{
+    display: block;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.title-2{
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.mini-p{
+    font-size: 15px;
+}
+
+main {
+    width: 100%;
+    max-width: 650px;
+    background: 
+        radial-gradient(circle at top left, #1a150e, #0d0d0d) padding-box, 
+        linear-gradient(135deg, #C5A165, #333, #614f31) border-box;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 40px 4px 40px 4px;
+    margin: auto;
+    padding: 50px 60px;
+    /*#C5A165, #333, #614f31*/
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.benefict-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.benefict-h3 {
+    font-size: 14px;
+    white-space: nowrap;
+    margin-bottom: 4px;
+}
+
+.benefict-p {
+    font-size: 11px;
+    line-height: 15px;
+    max-width: 120px;
+}
+
+.benefict-item {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    gap: 10px;
+}
+
+.benefict-gold svg {
+    width: 45px;
+    height: 45px;
+    display: block;
+    color: #CC9B69;
+    flex-shrink: 0;
+}
+
+.divisor-vertical {
+    width: 1px;
+    height: 40px;
+    background-color: #7e7e7eb0;
+    margin: 0px 3px;
+    flex-shrink: 0; /* Garante que a linha não suma */
+}
+
+.divisor-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0px;
+}
+
+.linha-horizontal {
+    flex: 1;
+    height: 0.5px;
+    background-color: #7e7e7eb0;
+}
+
+.texto-divisor {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.botoes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    color: white;
+    padding: 10px 25px;
+    border: 1px solid #7e7e7eb0;
+    border-radius: 10px;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.btn-social img, .btn-social svg {
+    width: 35px;
+    height: 35px;
+    display: block;
+    flex-shrink: 0;
+}
+
+.btn-social span {
+    font-size: 16px;
+}
+
+.icon-gold {
+    color: #CC9B69;
+}
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre cada campo de preenchimento */
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 20px 15px 20px 45px;
+    background-color: #121212;
+    border: 1px solid #7e7e7eb0;
+    border-radius: 10px;
+    border-radius: 12px;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    color: #CC9B69;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.input-icon svg {
+    width: 25px;
+    height: 25px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px; /* Fixa na direita */
+    color: #666; /* Cor mais discreta, ou use #CC9B69 se quiser dourado */
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* Já deixa o gatilho pro clique futuro */
+}
+
+.password-toggle svg {
+    width: 20px;
+    height: 20px;
+    transition: 0.3s;
+}
