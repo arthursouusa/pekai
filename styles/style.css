@@ -13,6 +13,7 @@ body {
     background-image: url(../images/background/WhatsApp\ Image\ 2026-05-12\ at\ 19.36.59.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
@@ -88,6 +89,7 @@ section {
     font-size: 11px;
     line-height: 15px;
     max-width: 120px;
+    color: #e5e5e5;
 }
 
 .benefict-item {
@@ -171,7 +173,7 @@ section {
 .cadastro-form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espaço entre cada campo de preenchimento */
+    gap: 15px; 
 }
 
 .input-group {
@@ -221,3 +223,207 @@ section {
     height: 20px;
     transition: 0.3s;
 }
+
+.terms-group {
+    display: flex;
+    align-items: flex-start;
+}
+
+.terms-group input[type="checkbox"] {
+    transform: scale(1.8);
+    margin-top: 8px;
+    margin-right: 13px;
+    accent-color: #121212;
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    background-color: #121212;
+    border: 1px solid #7e7e7eb0;
+    border-radius: 3px;
+
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: 0.2s;
+}
+
+.terms-group input[type="checkbox"]:checked {
+    background-color: #333; /* Fundo muda levemente ao marcar */
+    border-color: #888;
+}
+
+.terms-group input[type="checkbox"]:checked::after {
+    content: '✔';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 11px;
+}
+
+.terms-group label {
+    display: block;
+    max-width: 330px;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #e5e5e5;
+}
+
+.terms-group a {
+    color: lightblue;
+    letter-spacing: 1px;
+}
+
+.btn-principal {
+    width: 100%;
+    padding: 22px 16px;
+    background-color: #CC9B69;
+    color: #090909;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;                 
+    
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-principal:hover {
+    background-color: #b38a5a; 
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(204, 155, 105, 0.2);
+}
+
+.btn-principal .seta svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2.5px; 
+}
+
+.seguranca-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px 0;
+    margin-bottom: 50px;
+    color: #666;
+    font-size: 12px;
+}
+
+.seguranca-info p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 14px; 
+}
+
+.seguranca-info svg {
+    width: 14px;
+    height: 14px;
+    color: #CC9B69;
+    display: block;
+}
+
+.fazer-login {
+    text-align: center;
+    margin: 10px 0 0px 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.fazer-login a {
+    color: #CC9B69;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.fazer-login a:hover {
+    text-decoration: underline;
+}
+
+.footer-beneficts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 650px;
+    margin: 40px auto 20px auto;
+    padding: 20px;
+}
+
+.footer-beneficts div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-gold {
+    display: flex;
+    align-items: center;
+    color: #CC9B69;
+    flex-shrink: 0;
+}
+
+.footer-gold svg {
+    width: 16px;
+    height: 16px;
+}
+
+.footer-beneficts p {
+    font-size: 12px;
+    color: #888;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/*animações*/
+
+/* --- ANIMAÇÕES BASE DE TRANSIÇÃO --- */
+.btn-social, 
+.terms-group input[type="checkbox"], 
+.terms-group a, 
+.fazer-login a {
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- HOVER: BOTÕES SOCIAIS (Google e E-mail) --- */
+.btn-social:hover {
+    background-color: #1a1a1a; /* Clarea levemente o fundo */
+    border-color: #CC9B69; /* A borda assume o tom dourado */
+    transform: translateY(-2px); /* Pequeno salto para cima */
+    box-shadow: 0 4px 12px rgba(204, 155, 105, 0.1); /* Brilho dourado sutil no fundo */
+}
+
+.btn-social:active {
+    transform: translateY(0); /* Efeito de clique físico ao pressionar */
+}
+
+/* --- HOVER: CAIXA DE MARCAR (Checkbox dos Termos) --- */
+.terms-group input[type="checkbox"]:hover {
+    border-color: #CC9B69; /* Borda fica dourada ao passar o mouse */
+    box-shadow: 0 0 8px rgba(204, 155, 105, 0.2); /* Brilho dourado em volta */
+}
+
+/* --- HOVER: LINKS DOS TERMOS --- */
+.terms-group a:hover {
+    color: #57b3ff; /* Transiciona do lightblue original para um azul mais vivo */
+    text-decoration: underline;
+    text-shadow: 0 0 5px rgba(87, 179, 255, 0.3); /* Efeito de leve brilho neon */
+}
+
+.fazer-login a:hover {
+    color: #e5b88a; 
+    letter-spacing: 0.5px; 
+    text-decoration: none;
+}
+
