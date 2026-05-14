@@ -1,0 +1,202 @@
+/* --- DNA VISUAL (COPIADO DA INDEX) --- */
+
+/* 1. Cores e Fontes Base */
+:root {
+    --gold: #CC9B69;
+    --bg-dark: #090909;
+    --border-gray: #7e7e7eb0;
+}
+
+/* 2. Reset essencial para não bugar o layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.vendas-header {
+    padding: 25px 20px 0px;
+    text-align: center;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+/* O Retângulo com borda fina do topo */
+.header-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgba(204, 155, 105, 0.3);
+    padding: 15px 25px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.badge-icon, .badge-arrow {
+    color: var(--gold);
+}
+
+.header-badge p {
+    font-size: 15px;
+    text-align: left;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+.header-badge p span {
+    font-size: 13px;
+}
+
+/* 3. Fundo Idêntico */
+body {
+    background-color: var(--bg-dark);
+    color: white;
+    background-image: url(../images/background/background2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* 4. Estilo dos Textos Dourados e Títulos */
+.gold-letter {
+    color: var(--gold);
+}
+
+/* 5. Estilo do Botão Principal (Reutilizando o padrão que você já tem) */
+.btn-principal {
+    width: 100%;
+    padding: 22px 16px;
+    background-color: var(--gold);
+    color: #090909;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-principal:hover {
+    background-color: #b38a5a; 
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(204, 155, 105, 0.2);
+}
+
+/* --- AGORA CONTINUA O SEU CSS DE VENDAS ABAIXO --- */
+
+.pricing-container {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.pricing-header {
+    margin-bottom: 50px;
+}
+
+.up-title {
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.title-pricing {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 10px 0px 15px 0px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.subtitle-pricing {
+    max-width: 550px;
+    margin: auto;
+    font-size: 17px;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Para mobile */
+}
+
+.price-card {
+    background: #0d0d0d;
+    border: 1px solid #333;
+    border-radius: 24px;
+    padding: 40px;
+    width: 100%;
+    max-width: 410px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* O efeito de destaque no segundo card */
+.highlight-card {
+    border: 1px solid #CC9B69;
+    box-shadow: 0 10px 30px rgba(204, 155, 105, 0.1);
+}
+
+.card-icon {
+    color: #CC9B69;
+    margin-bottom: 20px;
+}
+
+.plan-name {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.plan-format {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.plan-price {
+    margin: 20px 0;
+}
+
+.plan-price .currency {
+    font-size: 20px;
+    color: #CC9B69;
+    vertical-align: super;
+}
+
+.plan-price .value {
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.plan-features {
+    list-style: none;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.plan-features li {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.check-icon {
+    color: #CC9B69;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.btn-plan {
+    padding: 18px !important; /* Um pouco menor que o da Home */
+}
+

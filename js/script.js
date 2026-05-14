@@ -45,3 +45,14 @@ formCadastro.addEventListener('submit', (event) => {
         confirmaSenha.style.borderColor = '#ff4444';
     }
 });
+
+formCadastro.addEventListener('submit', (event) => {
+    event.preventDefault(); // Impede a página de recarregar
+
+    if (senha.value !== confirmaSenha.value) {
+        alert('As senhas não coincidem!');
+    } else {
+        // Se tudo estiver certo, ele vai para a página de vendas
+        window.location.href = "vendas.html";
+    }
+});
