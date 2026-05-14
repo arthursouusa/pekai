@@ -170,12 +170,6 @@ section {
     color: #CC9B69;
 }
 
-.cadastro-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; 
-}
-
 .input-group {
     position: relative;
     display: flex;
@@ -427,3 +421,61 @@ section {
     text-decoration: none;
 }
 
+/* Unificando tudo em um seletor forte */
+#form-cadastro.cadastro-form {
+    display: none; /* O JS vai trocar para 'flex' */
+    flex-direction: column;
+    
+    /* Espaço em relação ao que está fora */
+    margin-top: 40px !important;
+    margin-bottom: 30px;
+    
+    /* Espaço ENTRE os inputs (o que estava falhando) */
+    gap: 25px !important; 
+}
+
+/* Se o gap ainda falhar por culpa do navegador, isso aqui é o plano B infalível: */
+#form-cadastro.cadastro-form .input-group {
+    margin-bottom: 5px; /* Um reforço caso o gap seja ignorado */
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(-10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(-10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* Classe que o JS vai adicionar para disparar a animação */
+.form-animado {
+    display: flex !important;
+    animation: entradaSuave 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes entradaSuave {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95); /* Vem de baixo e um pouco menor */
+        filter: blur(10px); /* Começa desfocado */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0); /* Fica nítido */
+    }
+}
