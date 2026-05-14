@@ -38,14 +38,14 @@
 }
 
 .header-badge p {
-    font-size: 15px;
+    font-size: 17px;
     text-align: left;
     color: #ccc;
     line-height: 1.4;
 }
 
 .header-badge p span {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 /* 3. Fundo Idêntico */
@@ -190,6 +190,10 @@ body {
     gap: 10px;
 }
 
+.special-plan {
+    margin-top: 50px;
+}
+
 .check-icon {
     color: #CC9B69;
     font-style: normal;
@@ -200,3 +204,220 @@ body {
     padding: 18px !important; /* Um pouco menor que o da Home */
 }
 
+.btn-special {
+    margin-top: 72px;
+}
+
+.final-cta {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* A Caixa com borda da imagem */
+.benefits-glass-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.01);
+    margin-bottom: 0px;
+}
+
+.benefit-column {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 0 10px;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 70px; /* Não encosta nas bordas */
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 20px;
+}
+
+.benefit-icon {
+    color: var(--gold);
+    flex-shrink: 0;
+}
+
+.benefit-info h4 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.benefit-info p {
+    font-size: 16px;
+    color: #888;
+    line-height: 1.5;
+}
+
+/* Botão Dourado Gigante */
+.btn-final-buy {
+    width: 100%;
+    height: 75px;
+    background: linear-gradient(90deg, #CC9B69 0%, #9c754c 100%);
+    border: none;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 25px;
+}
+
+.btn-final-buy:hover {
+    transform: scale(1.01);
+    filter: brightness(1.1);
+}
+
+.security-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* ISSO vai centralizar o ícone e o texto */
+    gap: 8px;
+    color: #666;
+    font-size: 14px;
+    margin-top: 90px; /* Dá um respiro em relação ao conteúdo de cima */
+    width: 100%;      /* Garante que ele ocupe a largura total para o justify funcionar */
+}
+
+/* --- SEÇÃO DE INFORMAÇÕES EXTRAS --- */
+.extra-info {
+    max-width: 1100px;
+    margin: 80px auto 30px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 75px;
+    font-weight: 700;
+}
+
+.mid-title { margin-top: 100px; }
+
+/* Grid de Conquistas (Cards com borda) */
+.conquistar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.conquista-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 40px 30px;
+    transition: 0.3s;
+}
+
+.icon-box {
+    background: rgba(204, 155, 105, 0.1);
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: var(--gold);
+}
+
+.conquista-card h3 { 
+    font-size: 18px; margin-bottom: 15px; letter-spacing: 1px; 
+}
+
+.conquista-card p { 
+    font-size: 16px; color: #888; line-height: 1.6; 
+}
+
+.card-line {
+    width: 40px;
+    height: 2px;
+    background: var(--gold);
+    margin: 25px auto 0;
+}
+
+/* Barra de Métricas */
+.metrics-bar {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.01);
+    line-height: 25px;
+}
+
+.metric-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #aaa;
+    font-size: 14px;
+    text-align: left;
+}
+
+.metric-item svg { 
+    color: var(--gold); 
+    flex-shrink: 0; 
+    width: 30px;
+    height: 30px;
+}
+
+.metric-item strong { 
+    color: #fff; display: block; 
+    font-size: 15px; 
+}
+
+/* Grid de Diferenciais (Ícones Soltos) */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feat-icon svg {
+    width: 35px;
+    height: 35px;
+}
+
+.feat-icon { 
+    margin-bottom: 20px; 
+}
+
+.feature-item h4 { 
+    font-size: 17px; 
+    margin-bottom: 10px; 
+    letter-spacing: 1px; 
+}
+
+.feature-item p { 
+    font-size: 16px; 
+    color: #777; line-height: 1.5; 
+}
