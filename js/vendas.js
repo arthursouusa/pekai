@@ -14,3 +14,17 @@ function logout() {
     localStorage.removeItem('sessao_ativa');
     window.location.href = "index.html";
 }
+
+function redirecionarCompra(produto) {
+    const links = {
+        'produto1': 'https://pay.kiwify.com.br/l4laHcd',
+        'produto2': 'https://pay.kiwify.com.br/v5ZHalI'
+    };
+
+    if (links[produto]) {
+        // O '_blank' é o comando que diz ao navegador: "Abra em uma nova aba"
+        window.open(links[produto], '_blank');
+    } else {
+        console.error("Link do produto não encontrado!");
+    }
+}
