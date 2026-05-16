@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="styles/media.css">
+
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 </head>
 <body>
 
@@ -73,7 +75,7 @@
     </div>
     
     <div class="botoes-sociais">
-        <button class="btn-social">
+        <button type="button" class="btn-social" id="google-login-btn">
             <img src="google.svg" alt="Google"> <span>Continuar com Google</span>
         </button>
 
@@ -190,6 +192,8 @@
     </div>
 
 </footer>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 
     <script src="js/script.js"></script>
 </body>

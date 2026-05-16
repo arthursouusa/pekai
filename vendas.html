@@ -8,21 +8,27 @@
     <link rel="stylesheet" href="styles/media2.css">
 </head>
 
-<header class="vendas-header">
-    <div class="header-badge">
-        <div class="badge-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M8 7h8"/><path d="M8 11h8"/><path d="M8 15h5"/></svg>
-        </div>
-        <p>Conteúdo prático. Estratégias reais. Resultados consistentes.<br>
-           <span class="gold-letter">Material desenvolvido por especialistas em gestão e marketing.</span>
-        </p>
-        <div class="badge-arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </div>
-    </div>
-</header>
-
 <body>
+    <header class="vendas-header">
+        <div class="container-sair" onclick="logout()" title="Sair">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m15 18-6-6 6-6"/>
+            </svg>
+        </div>
+
+        <div class="header-badge">
+            <div class="badge-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+                    <path d="M8 7h8"/><path d="M8 11h8"/><path d="M8 15h5"/>
+                </svg>
+            </div>
+            <p>Conteúdo prático. Estratégias reais. Resultados consistentes.<br>
+               <span class="gold-letter">Material desenvolvido por especialistas em gestão e marketing.</span>
+            </p>
+        </div>
+    </header>
+
     <section class="pricing-container">
     <div class="pricing-header">
         <span class="up-title">ADQUIRA AGORA</span>
@@ -40,7 +46,7 @@
             
             <div class="plan-price">
                 <span class="currency">R$</span>
-                <span class="value">27,00</span>
+                <span class="value">23,90</span>
             </div>
 
             <ul class="plan-features special-plan">
@@ -66,7 +72,7 @@
             
             <div class="plan-price">
                 <span class="currency">R$</span>
-                <span class="value">74,90</span>
+                <span class="value">65,90</span>
             </div>
 
             <ul class="plan-features">
@@ -181,5 +187,7 @@
         Pagamento 100% seguro | Acesso vitalício ao conteúdo adquirido
     </div>
 </section>
+
+    <script src="js/vendas.js"></script>
 </body>
 </html>

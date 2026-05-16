@@ -421,3 +421,34 @@ body {
     font-size: 16px; 
     color: #777; line-height: 1.5; 
 }
+
+/* Container da seta */
+.container-sair {
+    position: absolute; 
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(204, 155, 105, 0.1); /* Dourado bem clarinho de fundo */
+    border: 1px solid #CC9B69; /* Borda dourada */
+    border-radius: 50%; /* Deixa o fundo redondinho */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #CC9B69;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 99; /* Garante que fica por cima de tudo */
+}
+
+/* Efeito ao passar o mouse */
+.container-sair:hover {
+    background-color: #CC9B69; /* Fica dourado cheio */
+    color: #fff; /* Seta fica branca */
+    transform: scale(1.1); /* Aumenta levemente */
+}
+
+/* Garante que o SVG da seta não herde estilos estranhos */
+.container-sair svg {
+    display: block;
+}
