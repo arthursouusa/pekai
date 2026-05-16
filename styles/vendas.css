@@ -160,7 +160,7 @@ body {
 }
 
 .plan-price {
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .plan-price .currency {
@@ -191,8 +191,8 @@ body {
 }
 
 .special-plan {
-    margin-top: 50px;
-}
+    margin-bottom: 0px;
+}   
 
 .check-icon {
     color: #CC9B69;
@@ -205,7 +205,7 @@ body {
 }
 
 .btn-special {
-    margin-top: 72px;
+    margin-top: 57px;
 }
 
 .final-cta {

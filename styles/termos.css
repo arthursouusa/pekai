@@ -1,0 +1,88 @@
+/* Estilo "Documento PDF" para Termos de Uso */
+
+body {
+    background-color: #f4f4f4; /* Fundo cinza claro para destacar o "papel" */
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.document-container {
+    background-color: #ffffff; /* Cor do papel */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 80px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+.doc-header {
+    border-bottom: 2px solid #eee;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.doc-header h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #000;
+}
+
+.update-date {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.doc-content h2 {
+    font-size: 18px;
+    margin-top: 30px;
+    color: #000;
+    border-left: 4px solid #CC9B69; /* Toque sutil da cor da PEKAI */
+    padding-left: 10px;
+}
+
+.doc-content p, .doc-content li {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.doc-content ul {
+    margin-bottom: 20px;
+}
+
+.doc-content li {
+    margin-bottom: 8px;
+}
+
+.doc-footer {
+    margin-top: 50px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
+.btn-voltar {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #000;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .document-container {
+        padding: 30px 20px;
+    }
+}
