@@ -63,7 +63,7 @@ body {
     color: var(--gold);
 }
 
-/* 5. Estilo do Botão Principal (Reutilizando o padrão que você já tem) */
+/* 5. Estilo do Botão Principal */
 .btn-principal {
     width: 100%;
     padding: 22px 16px;
@@ -117,34 +117,34 @@ body {
     font-size: 17px;
 }
 
-/* --- CSS DO CARD DE PRODUTO ÚNICO AJUSTADO --- */
+/* --- CSS DO CARD DE PRODUTO ÚNICO --- */
 
 .cards-wrapper {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap; 
-    margin-top: 20px; /* Dá um recuo extra em relação ao subtítulo da página */
+    margin-top: 20px;
 }
 
 .price-card {
     background: #0d0d0d;
     border: 1px solid #333;
     border-radius: 24px;
-    padding: 50px 45px; /* Aumentado o padding interno para encorpar o card (altura e largura) */
+    padding: 50px 45px; 
     width: 100%;
-    max-width: 480px; /* Aumentado de 410px para 480px para o card ficar mais largo e robusto */
+    max-width: 480px; 
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 620px; /* Garante uma altura mínima imponente e fixa */
+    min-height: 680px; 
 }
 
 /* O efeito de destaque no card único (Dourado) */
 .highlight-card {
     border: 1px solid #CC9B69;
-    box-shadow: 0 15px 40px rgba(204, 155, 105, 0.15); /* Sombra levemente expandida */
+    box-shadow: 0 15px 40px rgba(204, 155, 105, 0.15);
 }
 
 .card-icon {
@@ -153,48 +153,92 @@ body {
 }
 
 .plan-name {
-    font-size: 30px; /* Aumentado de 24px para 30px para dar mais destaque */
+    font-size: 36px; 
     letter-spacing: 2px;
-    margin-bottom: 8px; /* Espaçamento controlado até o formato */
-    font-weight: 700;
+    margin-bottom: 8px; 
+    font-weight: 800;
+    text-align: center;
 }
 
 .plan-format {
     font-size: 14px;
-    margin-bottom: 0px; /* Zerado para controlar o bloco dinamicamente */
+    margin-bottom: 0px; 
 }
 
-/* Alinhamento perfeito e espaçamento do bloco de Preço */
+/* Bloco principal do preço */
 .plan-price {
-    margin: 40px 0px; /* Aumentado o respiro vertical do preço (Equilibra o espaço entre Título e Botão) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; 
+    margin: 40px 0px; 
+}
+
+/* ALTERAÇÃO: Preço antigo jogado um pouco mais para cima */
+.plan-price .old-price {
+    font-size: 18px;
+    color: #666;
+    text-decoration: line-through;
+    margin-bottom: 25px; /* Aumentado o espaçamento para subir o preço antigo */
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Alinha as linhas verticalmente no centro do card */
+.main-price-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Coloca o R$ e o 39 lado a lado de forma limpa e sem invadir espaço */
+.price-row-top {
     display: flex;
     align-items: baseline;
     justify-content: center;
+    gap: 8px; 
 }
 
+/* ALTERAÇÃO: Aumentado o tamanho do R$ ao lado do número */
 .plan-price .currency {
-    font-size: 24px; /* Aumentado levemente para acompanhar o valor */
-    color: #CC9B69;
-    vertical-align: super;
-    margin-right: 5px;
+    font-size: 26px; /* Aumentado de 20px para 26px */
+    color: var(--gold);
+    font-weight: 700;
 }
 
-.plan-price .value {
-    font-size: 72px; /* Aumentado de 64px para 72px para o preço ficar bem impactante */
+/* ALTERAÇÃO: Aumentado o tamanho do "39," */
+.plan-price .value-reais {
+    font-size: 86px; /* Aumentado de 76px para 86px */
     font-weight: 800;
-    line-height: 1;
+    line-height: 0.9;
+    color: #fff;
+}
+
+/* ALTERAÇÃO: Aumentado o tamanho do "90" acompanhando a linha de cima */
+.plan-price .value-centavos {
+    font-size: 86px; /* Aumentado de 76px para 86px */
+    font-weight: 800;
+    line-height: 0.9;
+    color: #fff; 
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 5px; 
+    padding-left: 24px; /* Ajustado compensação visual por conta do R$ maior */
 }
 
 .plan-features {
     list-style: none;
     text-align: left;
     width: 100%;
-    margin-bottom: 40px; /* Espaço ideal entre a lista de benefícios e o botão */
-    flex-grow: 1; /* Empurra o botão sempre para o rodapé do card, mantendo o alinhamento limpo */
+    margin-bottom: 0px; 
 }
 
 .plan-features li {
-    font-size: 15px; /* Aumentado de 14px para 15px para melhorar a leitura na tela cheia */
+    font-size: 15px; 
     color: #ccc;
     margin-bottom: 14px;
     display: flex;
@@ -203,8 +247,9 @@ body {
 }
 
 .btn-plan {
-    padding: 20px !important; /* Ganhou um leve preenchimento para acompanhar o tamanho do card */
+    padding: 20px !important; 
     width: 100%;
+    margin-top: 30px; 
 }
 
 .btn-special {
@@ -242,7 +287,7 @@ body {
 
 .vertical-line {
     width: 1px;
-    height: 70px; /* Não encosta nas bordas */
+    height: 70px; 
     background: rgba(255, 255, 255, 0.1);
     margin: 0 20px;
 }
@@ -293,12 +338,12 @@ body {
 .security-footer {
     display: flex;
     align-items: center;
-    justify-content: center; /* ISSO vai centralizar o ícone e o texto */
+    justify-content: center; 
     gap: 8px;
     color: #666;
     font-size: 14px;
-    margin-top: 90px; /* Dá um respiro em relação ao conteúdo de cima */
-    width: 100%;      /* Garante que ele ocupe a largura total para o justify funcionar */
+    margin-top: 90px; 
+    width: 100%;      
 }
 
 /* --- SEÇÃO DE INFORMAÇÕES EXTRAS --- */
@@ -432,23 +477,23 @@ body {
     left: 20px;
     width: 40px;
     height: 40px;
-    background-color: rgba(204, 155, 105, 0.1); /* Dourado bem clarinho de fundo */
-    border: 1px solid #CC9B69; /* Borda dourada */
-    border-radius: 50%; /* Deixa o fundo redondinho */
+    background-color: rgba(204, 155, 105, 0.1); 
+    border: 1px solid #CC9B69; 
+    border-radius: 50%; 
     display: flex;
     align-items: center;
     justify-content: center;
     color: #CC9B69;
     cursor: pointer;
     transition: all 0.3s ease;
-    z-index: 99; /* Garante que fica por cima de tudo */
+    z-index: 99; 
 }
 
 /* Efeito ao passar o mouse */
 .container-sair:hover {
-    background-color: #CC9B69; /* Fica dourado cheio */
-    color: #fff; /* Seta fica branca */
-    transform: scale(1.1); /* Aumenta levemente */
+    background-color: #CC9B69; 
+    color: #fff; 
+    transform: scale(1.1); 
 }
 
 /* Garante que o SVG da seta não herde estilos estranhos */
