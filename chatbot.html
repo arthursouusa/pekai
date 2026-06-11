@@ -12,7 +12,7 @@
         <header class="chat-header">
             <div class="bot-info">
                 <div class="bot-avatar">
-                <img src="images/icon-bot/icon-bot.jpeg" alt="Avatar Bot">
+                    <img src="images/icon-bot/icon-bot.jpeg" alt="Avatar Bot">
                 </div>
                 <div>
                     <h2>Assistente Pekai</h2>
@@ -24,25 +24,28 @@
         </header>
 
         <main class="chat-messages" id="chat-messages">
-        </main>
-
-        <div class="typing-indicator" id="typing-indicator">
-            <span></span><span></span><span></span>
-        </div>
+            </main>
 
         <footer class="chat-footer">
-            <div class="quick-replies">
-                <button class="quick-btn" onclick="enviarSugestao('Esse e-book é para iniciantes?')">Para iniciantes?</button>
-                <button class="quick-btn" onclick="enviarSugestao('Vou vender mais depois de ler?')">Vou vender mais?</button>
-                <button class="quick-btn" onclick="enviarSugestao('Qual o diferencial?')">Qual o diferencial?</button>
-            </div>
+            <div class="footer-container">
+                
+                <div class="typing-indicator" id="typing-indicator">
+                    <span></span><span></span><span></span>
+                </div>
 
-            <form id="chat-form" class="input-area">
-                <input type="text" id="user-input" placeholder="Pergunte sobre o e-book Engenharia da Conversão..." autocomplete="off" required>
-                <button type="submit" id="btn-enviar">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                </button>
-            </form>
+                <div class="quick-replies">
+                    <button class="quick-btn" onclick="enviarSugestao('Esse e-book é para iniciantes?')">Para iniciantes?</button>
+                    <button class="quick-btn" onclick="enviarSugestao('Vou vender mais depois de ler?')">Vou vender mais?</button>
+                    <button class="quick-btn" onclick="enviarSugestao('Qual o diferencial?')">Qual o diferencial?</button>
+                </div>
+
+                <form id="chat-form" class="input-area">
+                    <input type="text" id="user-input" placeholder="Pergunte sobre o e-book Engenharia da Conversão..." autocomplete="off" required>
+                    <button type="submit" id="btn-enviar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </button>
+                </form>
+            </div>
         </footer>
     </div>
 

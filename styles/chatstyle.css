@@ -6,13 +6,40 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* CUSTOMIZAÇÃO DA BARRA DE ROLAGEM (Geral e Firefox) */
+html, body, .chat-messages {
+    scrollbar-width: thin; /* Deixa a barra mais fina no Firefox */
+    scrollbar-color: #222222 #000000; /* Cor do botão (cinza escuro) e do fundo (preto puro) no Firefox */
+}
+
+/* CUSTOMIZAÇÃO DA BARRA DE ROLAGEM (Navegadores Webkit: Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 6px;  /* Largura da barra vertical */
+    height: 6px; /* Altura da barra horizontal (caso apareça nas sugestões) */
+}
+
+/* Fundo da barra de rolagem (Track) */
+::-webkit-scrollbar-track {
+    background: #000000; /* Preto puro para sumir com o fundo da barra */
+}
+
+/* O botão que o usuário arrasta (Thumb) */
+::-webkit-scrollbar-thumb {
+    background: #222222; /* Cinza escuro discreto */
+    border-radius: 10px; /* Deixa as pontas do botão arredondadas */
+}
+
+/* Quando o usuário passa o mouse por cima do botão de rolar */
+::-webkit-scrollbar-thumb:hover {
+    background: #333333; /* Dá um leve destaque ao passar o mouse */
+}
+
 body {
-    background-color: #0b0b0b;
+    background-color: #000000; /* Preto puro no fundo */
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* CORREÇÃO PARA O CELULAR: Garante que o fundo use a altura real e dinâmica da tela */
     height: 100vh;
     height: 100dvh;
     padding: 0;
@@ -22,11 +49,10 @@ body {
 /* Container Principal do Chat */
 .chat-container {
     width: 100vw;
-    /* CORREÇÃO PARA O CELULAR: O container acompanha o tamanho dinâmico sem sumir com o rodapé */
     height: 100vh;
     height: 100dvh;
     max-width: none;
-    background-color: #121212;
+    background-color: #000000;
     border: none;
     border-radius: 0;
     display: flex;
@@ -37,12 +63,19 @@ body {
 
 /* Cabeçalho */
 .chat-header {
-    background-color: #1a1a1a;
+    background-color: #0a0a0a;
     padding: 16px 20px;
+    border-bottom: 1px solid #141414;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #222222;
+}
+
+@media (min-width: 960px) {
+    .chat-header {
+        padding: 16px calc((100vw - 960px) / 2 + 20px);
+    }
 }
 
 .bot-info {
@@ -51,7 +84,6 @@ body {
     gap: 12px;
 }
 
-/* Estilo para a imagem do avatar */
 .bot-avatar {
     width: 40px;
     height: 40px;
@@ -60,7 +92,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #222222;
+    background-color: #141414;
 }
 
 .bot-avatar img {
@@ -74,18 +106,10 @@ body {
     font-weight: 600;
 }
 
-.status-online {
-    font-size: 12px;
-    color: #00ff66;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
 #btn-limpar {
     background: none;
     border: none;
-    color: #666;
+    color: #444;
     cursor: pointer;
     transition: color 0.2s;
 }
@@ -101,54 +125,58 @@ body {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    max-width: 1200px;
+    gap: 24px;
     width: 100%;
-    margin: 0 auto;
+    max-width: 960px; 
+    margin: 0 auto;  
 }
 
-/* Estilo dos Balões de Mensagem */
+/* Configuração dos Balões */
 .message {
-    max-width: 70%;
     padding: 12px 16px;
     border-radius: 14px;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
     animation: surgimento 0.3s ease-out;
 }
 
+/* Balão do Usuário */
 .message.user {
     background-color: #ff1e1e;
     color: white;
     align-self: flex-end;
+    max-width: 620px; 
     border-bottom-right-radius: 2px;
 }
 
+/* Balão do Bot */
 .message.bot {
-    background-color: #222222;
+    background-color: transparent;
     color: #e0e0e0;
     align-self: flex-start;
+    max-width: 620px;
     border-bottom-left-radius: 2px;
-    border: 1px solid #333;
+    border: none; 
 }
 
 /* Indicador de Digitando */
 .typing-indicator {
-    display: none;
+    display: none; 
     align-self: flex-start;
-    background-color: #222222;
+    width: fit-content;
+    background-color: transparent;
     padding: 12px 16px;
     border-radius: 14px;
     border-bottom-left-radius: 2px;
-    margin-left: 20px;
-    margin-bottom: 10px;
+    border: none; 
     gap: 4px;
+    margin-bottom: 16px; 
 }
 
 .typing-indicator span {
     width: 8px;
     height: 8px;
-    background-color: #888;
+    background-color: #666;
     border-radius: 50%;
     display: inline-block;
     animation: bounce 1.3s infinite ease-in-out;
@@ -159,15 +187,19 @@ body {
 
 /* Rodapé do Chat */
 .chat-footer {
-    padding: 16px;
-    background-color: #1a1a1a;
-    border-top: 1px solid #222222;
+    padding: 16px 0px;
+    background-color: transparent;
+    border-top: none;
+    width: 100%;
+    max-width: 960px; 
+    margin: 0 auto;
 }
 
 .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
     width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .quick-replies {
@@ -178,14 +210,15 @@ body {
     padding-bottom: 4px;
 }
 
+/* Customização específica da barrinha horizontal das respostas rápidas */
 .quick-replies::-webkit-scrollbar {
     height: 4px;
 }
 
 .quick-btn {
-    background-color: #262626;
+    background-color: #0f0f0f;
     color: #ccc;
-    border: 1px solid #333;
+    border: 1px solid #1a1a1a;
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 13px;
@@ -205,13 +238,14 @@ body {
     gap: 10px;
 }
 
+/* Campo de Escrita */
 #user-input {
     flex: 1;
-    background-color: #262626;
-    border: 1px solid #333;
+    background-color: #0f0f0f;
+    border: 1px solid #1a1a1a;
     color: white;
-    padding: 12px 16px;
-    border-radius: 8px;
+    padding: 14px 20px;
+    border-radius: 24px; 
     font-size: 15px;
     outline: none;
 }
@@ -220,12 +254,13 @@ body {
     border-color: #ff1e1e;
 }
 
+/* Botão de Enviar */
 #btn-enviar {
     background-color: #ff1e1e;
     color: white;
     border: none;
-    padding: 12px;
-    border-radius: 8px;
+    padding: 14px 20px;
+    border-radius: 24px; 
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -248,10 +283,11 @@ body {
     30% { transform: translateY(-6px); }
 }
 
-/* Responsividade Básica (Media Query) */
+/* Responsividade Básica (Mobile) */
 @media (max-width: 480px) {
+    .chat-header { padding: 16px 20px !important; }
     .chat-messages { padding: 16px; }
-    .chat-footer { padding: 12px 16px; }
-    .message { max-width: 85%; }
-    .quick-replies { padding-bottom: 8px; }
+    .chat-footer { padding: 12px 0; max-width: 100%; }
+    .footer-container { padding: 0 16px; }
+    .message { max-width: 85% !important; }
 }
