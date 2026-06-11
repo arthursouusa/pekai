@@ -1,7 +1,14 @@
 // ==========================================
-// 1. BASE DE CONHECIMENTO ULTRA EXPANDIDA (Com Emojis e Exclamações!)
+// 1. BASE DE CONHECIMENTO ULTRA EXPANDIDA
 // ==========================================
 const knowledgeBase = [
+    {
+        intent: "saudacao",
+        keywords: [
+            "oi", "ola", "tudo bem", "tudo bom", "eae", "opa", "fala ai", "bom dia", "boa tarde", "boa noite", "salve"
+        ],
+        response: `Fala aí! Tudo ótimo por aqui! 👋 Sou o assistente estratégico da Pekai e estou pronto para te mostrar como o e-book **"Engenharia da Conversão"** vai virar o seu jogo no digital! 🚀 Qual é a sua maior dúvida hoje?`
+    },
     {
         intent: "sobre_o_produto",
         keywords: [
@@ -106,7 +113,7 @@ const knowledgeBase = [
         keywords: [
             "trafego pago", "anuncios", "ads", "meta ads", "google", "organico", "seo", "funil", "funis", "conversao", "captacao", "nutricao"
         ],
-        response: `O livro resolve o maior problema do tráfego: trazer pessoas e não converter! 🛑 Você vai entender como alinhar o Tráfego Orgânico (construção de base) com o Tráfego Pago (anúncios no Meta Ads/Google). Mais do que isso, ele ensina a desenhar a esteira completa: a Captação (atrair), a Nutrição (gerar valor) e a Conversão Final dentro do funil de vendas! 📈`
+        response: `O livro resolve o maior problema do tráfego: trazer pessoas e não converter! 🛑 Você vai entender como alinhar o Tráfego Orgânico (construção de base) com o Tráfego Pago (anúncios no Meta Ads/Google). Mais do que isso, ele ensina a desenho a esteira completa: a Captação (atrair), a Nutrição (gerar valor) e a Conversão Final dentro do funil de vendas! 📈`
     },
     {
         intent: "psicologia_e_audiencia",
@@ -151,6 +158,7 @@ function findIntentDirectly(input) {
     }
     // -------------------------------------------------------------------------
 
+    // Verificadores ultra diretos para as dúvidas do produto
     if (input.includes("diferencial") || input.includes("diferente")) {
         return knowledgeBase.find(item => item.intent === "diferencial_produto");
     }
@@ -169,6 +177,12 @@ function findIntentDirectly(input) {
 function getResponse(message) {
     const input = normalize(message);
     
+    // CORREÇÃO: Intercepta saudações na hora antes de qualquer outra análise por pontos
+    const listaSaudacoes = ["oi", "ola", "eae", "opa", "salve", "tudo bem", "tudo bom", "bom dia", "boa tarde", "boa noite", "fala ai"];
+    if (listaSaudacoes.includes(input) || input === "oi" || input === "ola") {
+        return knowledgeBase.find(item => item.intent === "saudacao").response;
+    }
+
     const directMatch = findIntentDirectly(input);
     if (directMatch) {
         return directMatch.response;
@@ -178,6 +192,8 @@ function getResponse(message) {
     let highestScore = 0;
 
     knowledgeBase.forEach(item => {
+        if (item.intent === "saudacao") return; // Pula a saudicação no loop de pontos
+        
         let score = 0;
         item.keywords.forEach(keyword => {
             const key = normalize(keyword);
@@ -199,7 +215,7 @@ function getResponse(message) {
     if (bestMatch && highestScore > 0) {
         let prefixoEmocional = "";
         if (input.includes("sera que") || input.includes("medo") || input.includes("inseguro")) {
-            prefixoEmocional = "Entendo perfeitamente sua dúvida! 🤔 É normal se sentir um pouco inseguro no início, mas deixa eu te falar a real... \n\n";
+            prefixoEmocional = "Entendo perfeitamente sua dúvida! 🤔 É normal se sentir um pouco insecure no início, mas deixa eu te falar a real... \n\n";
         } else if (input.includes("duvido") || input.includes("mentira")) {
             prefixoEmocional = "Gosto de quem questiona e não aceita qualquer promessa! 😉 Olha como funciona na prática... \n\n";
         }
