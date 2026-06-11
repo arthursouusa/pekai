@@ -117,91 +117,94 @@ body {
     font-size: 17px;
 }
 
+/* --- CSS DO CARD DE PRODUTO ÚNICO AJUSTADO --- */
+
 .cards-wrapper {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap; /* Para mobile */
+    flex-wrap: wrap; 
+    margin-top: 20px; /* Dá um recuo extra em relação ao subtítulo da página */
 }
 
 .price-card {
     background: #0d0d0d;
     border: 1px solid #333;
     border-radius: 24px;
-    padding: 40px;
+    padding: 50px 45px; /* Aumentado o padding interno para encorpar o card (altura e largura) */
     width: 100%;
-    max-width: 410px;
+    max-width: 480px; /* Aumentado de 410px para 480px para o card ficar mais largo e robusto */
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 620px; /* Garante uma altura mínima imponente e fixa */
 }
 
-/* O efeito de destaque no segundo card */
+/* O efeito de destaque no card único (Dourado) */
 .highlight-card {
     border: 1px solid #CC9B69;
-    box-shadow: 0 10px 30px rgba(204, 155, 105, 0.1);
+    box-shadow: 0 15px 40px rgba(204, 155, 105, 0.15); /* Sombra levemente expandida */
 }
 
 .card-icon {
     color: #CC9B69;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .plan-name {
-    font-size: 24px;
+    font-size: 30px; /* Aumentado de 24px para 30px para dar mais destaque */
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Espaçamento controlado até o formato */
+    font-weight: 700;
 }
 
 .plan-format {
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 0px; /* Zerado para controlar o bloco dinamicamente */
 }
 
+/* Alinhamento perfeito e espaçamento do bloco de Preço */
 .plan-price {
-    margin: 30px 0;
+    margin: 40px 0px; /* Aumentado o respiro vertical do preço (Equilibra o espaço entre Título e Botão) */
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
 }
 
 .plan-price .currency {
-    font-size: 20px;
+    font-size: 24px; /* Aumentado levemente para acompanhar o valor */
     color: #CC9B69;
     vertical-align: super;
+    margin-right: 5px;
 }
 
 .plan-price .value {
-    font-size: 64px;
+    font-size: 72px; /* Aumentado de 64px para 72px para o preço ficar bem impactante */
     font-weight: 800;
+    line-height: 1;
 }
 
 .plan-features {
     list-style: none;
     text-align: left;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 40px; /* Espaço ideal entre a lista de benefícios e o botão */
+    flex-grow: 1; /* Empurra o botão sempre para o rodapé do card, mantendo o alinhamento limpo */
 }
 
 .plan-features li {
-    font-size: 14px;
+    font-size: 15px; /* Aumentado de 14px para 15px para melhorar a leitura na tela cheia */
     color: #ccc;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.special-plan {
-    margin-bottom: 0px;
-}   
-
-.check-icon {
-    color: #CC9B69;
-    font-style: normal;
-    font-weight: bold;
-}
-
 .btn-plan {
-    padding: 18px !important; /* Um pouco menor que o da Home */
+    padding: 20px !important; /* Ganhou um leve preenchimento para acompanhar o tamanho do card */
+    width: 100%;
 }
 
 .btn-special {
