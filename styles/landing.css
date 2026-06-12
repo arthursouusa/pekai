@@ -27,6 +27,16 @@ body {
     font-family: 'Barlow Condensed';
 }
 
+.nav-container,
+.hero-container,
+.solution-container,
+.value-container,
+.checkout-container {
+    max-width: 1255px; /* Altere de 1200px para o valor que preferir */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* ==========================================================================
    NAVBAR SUPERIOR (COM SEPARADOR E ABA ASSISTENTE)
    ========================================================================== */
@@ -1092,12 +1102,3 @@ body {
     }
 }
 
-.nav-container,
-.hero-container,
-.solution-container,
-.value-container,
-.checkout-container {
-    max-width: 1255px; /* Altere de 1200px para o valor que preferir */
-    margin: 0 auto;
-    padding: 0 20px;
-}
