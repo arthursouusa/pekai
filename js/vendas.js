@@ -9,21 +9,21 @@
     }
 })();
 
-// Função para o botão de sair (que a gente já tinha feito)
+// Função para o botão de sair
 function logout() {
     localStorage.removeItem('sessao_ativa');
     window.location.href = "index.html";
 }
 
+// Função de redirecionamento atualizada apenas com o produto 2
 function redirecionarCompra(produto) {
     const links = {
-        'produto1': 'https://pay.kiwify.com.br/l4laHcd',
-        'produto2': 'https://pay.kiwify.com.br/v5ZHalI'
+        'produto2': '../landingpage.html' // <--- Só trocar pelo caminho real da sua nova LP
     };
 
     if (links[produto]) {
-        // O '_blank' é o comando que diz ao navegador: "Abra em uma nova aba"
-        window.open(links[produto], '_blank');
+        // Redireciona na mesma aba, resolvendo o problema do "../" perfeitamente
+        window.location.href = links[produto];
     } else {
         console.error("Link do produto não encontrado!");
     }
