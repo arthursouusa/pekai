@@ -1127,3 +1127,75 @@ body {
         font-size: 10px;
     }
 }
+
+/* ==========================================================================
+   BOTÃO VOLTAR NO MENU (NAVBAR)
+   ========================================================================== */
+.btn-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaaaaa;
+    text-decoration: none;
+    transition: color 0.2s, transform 0.2s;
+    padding: 5px;
+    margin-right: -15px; /* Ajuste fino de proximidade com a logo */
+}
+
+.btn-back:hover {
+    color: #ff0000; /* Acende no vermelho padrão do seu site */
+    transform: translateX(-3px); /* Leve efeito empurrando para a esquerda */
+}
+
+.btn-back svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Ajuste de alinhamento na Nav Container para acomodar o terceiro elemento */
+@media (min-width: 993px) {
+    .nav-container {
+        display: grid;
+        grid-template-columns: auto 1fr auto; /* Distribui: botão | espaço/logo | links */
+        align-items: center;
+        gap: 25px;
+    }
+    .brand-logo {
+        justify-self: start;
+    }
+    .nav-links {
+        justify-self: end;
+    }
+}
+
+/* Ajuste para o Mobile (Corrigido para centralizar a logo) */
+@media (max-width: 992px) {
+    .nav-container {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between; /* Mantém o botão na esquerda e a logo centralizada no espaço restante */
+        position: relative; /* Base para o alinhamento perfeito */
+    }
+
+    .btn-back {
+        margin-right: 0;
+        position: absolute;
+        left: 20px; /* Fixa o botão estritamente na lateral esquerda */
+        top: 13px;  /* Centraliza verticalmente na linha da logo */
+        z-index: 10;
+    }
+
+    .brand-logo {
+        margin: 0 auto; /* Mágica pura: centraliza a logo perfeitamente na tela */
+        text-align: center !important;
+        align-items: center !important;
+    }
+
+    .nav-links {
+        width: 100%; /* Força os links a quebrarem para a linha de baixo */
+        margin-top: 15px;
+        justify-content: center;
+    }
+}
