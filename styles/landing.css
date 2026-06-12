@@ -1,3 +1,7 @@
+.html, body {
+    scroll-behavior: smooth !important;
+}
+
 /* ==========================================================================
    RESET E CONFIGURAÇÕES GERAIS
    ========================================================================== */
@@ -37,14 +41,43 @@ body {
     padding: 0 20px;
 }
 
-/* ==========================================================================
-   NAVBAR SUPERIOR (COM SEPARADOR E ABA ASSISTENTE)
-   ========================================================================== */
 .navbar {
     width: 100%;
     background-color: #121212;
     border-bottom: 1px solid #111111;
     padding: 15px 0;
+    
+    /* Configuração inicial padrão */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+/* CLASSE ATIVADA PELO JS AO ROLAR */
+.navbar.scroll-active {
+    position: fixed;
+    top: 0;
+    /* 0.45 deixa o fundo bem transparente. Se quiser sumir mais, diminua para 0.30 */
+    background-color: rgba(18, 18, 18, 0.45); 
+    backdrop-filter: blur(10px); /* Dá aquele efeito de vidro desfocado irado */
+    -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
+    padding: 10px 0; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Linha sutil no fundo */
+    
+    /* Faz o menu deslizar pra baixo suavemente ao ativar */
+    animation: menuDescer 0.35s ease-out forwards; 
+}
+
+/* Animação de descida */
+@keyframes menuDescer {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 .nav-container {
@@ -136,7 +169,8 @@ body {
    ========================================================================== */
 .hero-section {
     width: 100%;
-    padding: 70px 0 60px 0; /* Ajustado padding inferior para dar espaço ao footer text */
+    /* Mude o primeiro valor (padding-top) de 70px para uns 130px */
+    padding: 130px 0 60px 0; 
     background-color: #000000;
 }
 
