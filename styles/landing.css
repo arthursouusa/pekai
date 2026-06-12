@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -15,15 +15,24 @@ body {
 }
 
 /* UTILITÁRIOS */
-.text-red { color: #ff0000; }
-.font-bold { font-weight: 700; }
+.text-red { 
+    color: #ff0000; 
+}
+
+.font-bold { 
+    font-weight: 700; 
+}
+
+.font-title {
+    font-family: 'Barlow Condensed';
+}
 
 /* ==========================================================================
    NAVBAR SUPERIOR (COM SEPARADOR E ABA ASSISTENTE)
    ========================================================================== */
 .navbar {
     width: 100%;
-    background-color: #050505;
+    background-color: #121212;
     border-bottom: 1px solid #111111;
     padding: 15px 0;
 }
@@ -142,7 +151,7 @@ body {
     font-size: 12px;
     font-weight: 700;
     color: #ff0000;
-    letter-spacing: 1px;
+    letter-spacing: 2.5px;
     display: block;
     margin-bottom: 12px;
 }
@@ -151,7 +160,7 @@ body {
     font-size: 46px;
     font-weight: 900;
     line-height: 1.1;
-    letter-spacing: 0.5px;
+    letter-spacing: 4px;
     margin-bottom: 25px;
 }
 
@@ -401,7 +410,7 @@ body {
 .solution-section {
     width: 100%;
     background-color: #000000;
-    padding: 60px 0 100px 0;
+    padding: 10px 0 100px 0;
 }
 
 .solution-container {
@@ -1081,4 +1090,14 @@ body {
     .urgency-bar span {
         font-size: 10px;
     }
+}
+
+.nav-container,
+.hero-container,
+.solution-container,
+.value-container,
+.checkout-container {
+    max-width: 1255px; /* Altere de 1200px para o valor que preferir */
+    margin: 0 auto;
+    padding: 0 20px;
 }
