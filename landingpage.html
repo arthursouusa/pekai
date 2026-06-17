@@ -3,603 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pekai - Engenharia da Conversão</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <title>Pekai — Engenharia da Conversão</title>
     <link rel="stylesheet" href="styles/landing.css">
     <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="./styles/media3.css">
 </head>
-<body id="topo">
+<body>
 
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="javascript:history.back()" class="btn-back" title="Voltar para a página anterior">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-            </a>
-
-            <div class="brand-logo">
-                <span class="logo-main">PEKAI</span>
-                <span class="logo-sub">GESTÃO & MARKETING</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#topo">INÍCIO</a></li>
-                <li><a href="#" class="dropdown">SOBRE ▾</a></li>
-                <li><a href="#" class="dropdown">CONTEÚDOS ▾</a></li>
-                <li><a href="#">CONTATO</a></li>
-                
-                <li class="nav-separator"></li>
-                
-                <li class="nav-bot">
-                    <a href="chatbot.html">
-                        <svg class="icon-robot" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
-                        <span>ASSISTENTE</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <header class="hero-section">
-        <div class="hero-container">
-            
-            <div class="hero-left">
-                <span class="badge-ebook">EBOOK</span>
-                <h1 class="hero-title font-title">
-                    TRANSFORME VISITANTES<br>EM <span class="text-red">COMPRADORES</span>
-                </h1>
-                <p class="hero-description">
-                    USANDO OS MESMOS GATILHOS QUE FAZEM PESSOAS TOMAREM DECISÕES DE COMPRA <span class="text-red font-bold">TODOS OS DIAS.</span>
-                </p>
-
-                <div class="quick-benefits">
-                    <div class="benefit-item">
-                        <svg class="icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                        </svg>
-                        <div class="benefit-text"><span>Acesso</span><span>imediato</span></div>
-                    </div>
-                    <div class="benefit-item">
-                        <svg class="icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                        </svg>
-                        <div class="benefit-text"><span>Leitura</span><span>rápida</span></div>
-                    </div>
-                    <div class="benefit-item">
-                        <svg class="icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <circle cx="12" cy="12" r="6"></circle>
-                            <circle cx="12" cy="12" r="2"></circle>
-                        </svg>
-                        <div class="benefit-text"><span>Aplicação</span><span>prática</span></div>
-                    </div>
-                </div>
-
-                <button class="btn-cta-hero">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 8px; vertical-align: -3px;">
-                        <circle cx="9" cy="21" r="1"></circle>
-                        <circle cx="20" cy="21" r="1"></circle>
-                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                    </svg>
-                    QUERO MEU ACESSO AGORA
-                </button>
-
-                <div class="hero-security">
-                    <span>
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align: -1px; margin-right: 3px;">
-                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                        </svg>
-                        Pagamento 100% seguro
-                    </span>
-                    <span>
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align: -1px; margin-right: 3px;">
-                            <polyline points="23 4 23 10 17 10"></polyline>
-                            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
-                        </svg>
-                        Acesso imediato via Kiwify
-                    </span>
-                </div>
-
-                <div class="metrics-container">
-                    <div class="metric-item">
-                        <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                        <p>Mais de<br><strong>1.000 leitores</strong></p>
-                    </div>
-                    <div class="metric-item-line"></div>
-                    <div class="metric-item">
-                        <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                        </svg>
-                        <p>Conteúdo direto<br><strong>ao ponto</strong></p>
-                    </div>
-                    <div class="metric-item-line"></div>
-                    <div class="metric-item">
-                        <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                        <p>Aplicado por<br><strong>empreendedores</strong></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-right">
-                <div class="hero-book-container">
-                    <img src="images/landingpage/book.jpeg" alt="Ebook Engenharia da Conversão" class="hero-book-img">
-                </div>
-            </div>
-
-        </div>
-
-        <div class="hero-footer">
-            <p class="hero-footer-sub">VOCÊ SE IDENTIFICA COM ISSO?</p>
-            <h2 class="hero-footer-main">CHEGA DE ESFORÇO SEM RESULTADO.</h2>
-        </div>
-    </header>
-
-    <section class="solution-section">
-        <div class="solution-container">
-            <div class="pains-grid">
-                <div class="pain-card">
-                    <svg class="icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                        <polyline points="14 2 14 8 20 8"></polyline>
-                        <line x1="16" y1="13" x2="8" y2="13"></line>
-                        <line x1="16" y1="17" x2="8" y2="17"></line>
-                        <polyline points="10 9 9 9 8 9"></polyline>
-                    </svg>
-                    <p>Passa horas criando conteúdo e não vende.</p>
-                </div>
-                <div class="pain-card">
-                    <svg class="icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="9" cy="7" r="4"></circle>
-                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                    </svg>
-                    <p>Tem seguidores, mas poucas conversões.</p>
-                </div>
-                <div class="pain-card">
-                    <svg class="icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline>
-                        <polyline points="17 18 23 18 23 12"></polyline>
-                    </svg>
-                    <p>Investe tempo e dinheiro e não tem retorno.</p>
-                </div>
-                <div class="pain-card">
-                    <svg class="icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
-                    </svg>
-                    <p>Sente que está sempre tentando, mas nada muda.</p>
-                </div>
-            </div>
-        
-             <div class="product-block">
-                
-                <div class="product-left">
-                    <div class="mockup-wrapper">
-                        <img src="images/landingpage/book&phone.jpeg" alt="Engenharia da Conversão + Celular" class="mockup-img">
-                    </div>
-                </div>
-
-                <div class="product-right">
-                    <span class="badge-solucao">A SOLUÇÃO</span>
-                    <h2 class="product-title">APRENDA O MÉTODO QUE AUMENTA SUAS CONVERSÕES</h2>
-
-                    <div class="pillars-grid">
-                        <div class="pillar-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <circle cx="12" cy="12" r="6"></circle>
-                                <circle cx="12" cy="12" r="2"></circle>
-                            </svg>
-                            <span>Psicologia da Venda</span>
-                        </div>
-                        <div class="pillar-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="18" y1="20" x2="18" y2="10"></line>
-                                <line x1="12" y1="20" x2="12" y2="4"></line>
-                                <line x1="6" y1="20" x2="6" y2="14"></line>
-                            </svg>
-                            <span>Estratégias de Conversão</span>
-                        </div>
-                        <div class="pillar-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 20h9"></path>
-                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
-                            </svg>
-                            <span>Copywriting Persuasivo</span>
-                        </div>
-                        <div class="pillar-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.41 11.41A2 2 0 1 1 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path>
-                            </svg>
-                            <span>Gatilhos Mentais</span>
-                        </div>
-                        <div class="pillar-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                            </svg>
-                            <span>Ofertas Irresistíveis</span>
-                        </div>
-                    </div>
-
-                    <div class="modules-section">
-                        <span class="modules-headline">O QUE TEM DENTRO DO EBOOK</span>
-                        
-                        <div class="modules-grid">
-                            <div class="module-card">
-                                <span class="mod-number">MÓDULO 01</span>
-                                <span class="mod-text">Fundamentos da Conversão</span>
-                            </div>
-                            <div class="module-card">
-                                <span class="mod-number">MÓDULO 04</span>
-                                <span class="mod-text">Copywriting Estratégico</span>
-                            </div>
-                            <div class="module-card">
-                                <span class="mod-number">MÓDULO 02</span>
-                                <span class="mod-text">Psicologia do Consumidor</span>
-                            </div>
-                            <div class="module-card">
-                                <span class="mod-number">MÓDULO 05</span>
-                                <span class="mod-text">Escalando Resultados</span>
-                            </div>
-                            <div class="module-card">
-                                <span class="mod-number">MÓDULO 03</span>
-                                <span class="mod-text">Construção de Oferta</span>
-                            </div>
-                            <div class="module-card">
-                                <span class="mod-number">MÓDULO 06</span>
-                                <span class="mod-text">Bônus Exclusivos</span>
-                            </div>
-                        </div>
-
-                        <p class="bonus-footer">+ BÔNUS EXCLUSIVOS: Modelos, Checklists e Templates</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="value-section">
-    <div class="value-container">
-        <div class="value-box">
-            <div class="value-left">
-                <span class="badge-different no-red">POR QUE ESTE EBOOK</span>
-                <h2 class="different-title">É DIFERENTE?</h2>
-                <p class="different-desc">
-                    A maioria dos materiais fala bonito, mas entrega pouco. Aqui a ideia é simplificar o caminho e deixar a aplicação fácil de enxergar.
-                </p>
-                <ul class="different-list">
-                    <li>
-                        <svg class="icon-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        Clareza na promessa da página.
-                    </li>
-                    <li>
-                        <svg class="icon-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        Estrutura que reduz atrito na decisão.
-                    </li>
-                    <li>
-                        <svg class="icon-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        Foco em conversão, não em enfeite.
-                    </li>
-                    <li>
-                        <svg class="icon-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        Aplicação prática para usar no mesmo dia.
-                    </li>
-                </ul>
-            </div>
-
-            <div class="box-separator"></div>
-
-            <div class="value-right">
-                <h3 class="roi-title">O QUE UMA PÁGINA MAIS CLARA ENTREGA?</h3>
-                <p class="roi-desc">Quando a comunicação fica mais objetiva, o processo começa a fluir melhor.</p>
-
-                <div class="roi-cards-grid">
-                    <div class="roi-card">
-                        <span class="roi-card-highlight">MAIS CLAREZA</span>
-                        <span class="roi-card-sub">O visitante entende a oferta mais rápido.</span>
-                    </div>
-                    <div class="roi-card">
-                        <span class="roi-card-highlight">MAIS FOCO</span>
-                        <span class="roi-card-sub">O texto guia a atenção para o que importa.</span>
-                    </div>
-                    <div class="roi-card">
-                        <span class="roi-card-highlight">MAIS AÇÃO</span>
-                        <span class="roi-card-sub">A decisão fica menos travada e mais natural.</span>
-                    </div>
-                </div>
-
-                <p class="roi-footer-text">
-                    Você investe apenas <span class="text-gold">R$ 39,90</span> em um processo que pode ser aplicado sempre que precisar vender melhor.
-                </p>
-            </div>
-        </div>
+<nav>
+  <div class="wrap">
+    <div>
+      <img src="images/title/title.png" alt="" class="title">
     </div>
+    <div class="nav-links">
+      <a href="#dentro">Conteúdos</a>
+      <a href="#assistente">Assistente</a>
+      <a href="#oferta">Quero meu acesso</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">E-book · Engenharia da Conversão</div>
+      <h1 class="display">Transforme visitantes em <span class="accent">compradores</span></h1>
+      <p class="lead">Usando os mesmos gatilhos que fazem pessoas tomarem decisões de compra todos os dias.</p>
+      <div class="hero-badges">
+        <span class="hero-badge">Acesso imediato</span>
+        <span class="hero-badge">Leitura rápida</span>
+        <span class="hero-badge">Aplicação prática</span>
+      </div>
+      <div class="hero-ctas">
+        <a href="LINK_KIWIFY_AQUI" class="btn-primary">Quero meu acesso agora</a>
+      </div>
+      <div class="hero-note">Pagamento 100% seguro · Acesso imediato via Kiwify</div>
+
+      <div class="proof-strip-mini">
+        <div>
+          <div class="proof-mini-num display">1.000+</div>
+          <div class="proof-mini-label">Leitores</div>
+        </div>
+        <div>
+          <div class="proof-mini-num display">Direto</div>
+          <div class="proof-mini-label">Ao ponto</div>
+        </div>
+        <div>
+          <div class="proof-mini-num display">Real</div>
+          <div class="proof-mini-label">Aplicado por empreendedores</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="images/landingpage/book.jpeg" alt="Ebook Engenharia da Conversão">
+    </div>
+  </div>
 </section>
 
-<section class="checkout-section">
-    <div class="checkout-container">
-        <div class="offer-box">
-            <div class="offer-pricing">
-                <div class="badge-row">
-                    <span class="old-price">DE R$ 59,90</span>
-                    <span class="badge-launch">🔥 OFERTA DE LANÇAMENTO</span>
-                </div>
-                <span class="price-label">POR APENAS</span>
-                <h2 class="main-price">R$ 39,90</h2>
-                <p class="price-note">investimento único no acesso ao ebook</p>
-            </div>
-
-            <div class="offer-features">
-                <ul class="features-list">
-                    <li>
-                        <svg class="icon-offer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                        </svg>
-                        Acesso imediato
-                    </li>
-                    <li>
-                        <svg class="icon-offer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
-                        </svg>
-                        Atualizações futuras
-                    </li>
-                    <li>
-                        <svg class="icon-offer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                        </svg>
-                        Material digital
-                    </li>
-                </ul>
-            </div>
-
-            <div class="offer-action">
-                <span class="offer-action-title">ACESSO RÁPIDO</span>
-                <p class="offer-action-text">Compra simples, entrega digital e leitura prática para aplicar no mesmo dia.</p>
-                <div class="checkout-secure-badge">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                    </svg>
-                    Pagamento 100% seguro via Kiwify
-                </div>
-            </div>
-        </div>
-
-        <div class="urgency-bar">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <circle cx="12" cy="13" r="8"></circle>
-                <path d="M12 9v4l2 2"></path>
-                <path d="M5 3L2 6"></path>
-                <path d="M19 3l3 3"></path>
-            </svg>
-            <span>OFERTA PROMOCIONAL POR TEMPO LIMITADO!</span>
-        </div>
+<section>
+  <div class="wrap problem-layout">
+    <div>
+      <div class="section-label">Você se identifica com isso?</div>
+      <h2 class="section-title">Chega de esforço sem resultado.</h2>
+      <div class="problem-list">
+        <div class="problem-item"><span class="x">×</span><p>Passa horas criando conteúdo e não vende.</p></div>
+        <div class="problem-item"><span class="x">×</span><p>Tem seguidores, mas poucas conversões.</p></div>
+        <div class="problem-item"><span class="x">×</span><p>Investe tempo e dinheiro e não tem retorno.</p></div>
+        <div class="problem-item"><span class="x">×</span><p>Sente que está sempre tentando, mas nada muda.</p></div>
+      </div>
     </div>
+    <div class="problem-visual">
+      <img src="images/landingpage/book&phone.jpeg" alt="Engenharia da Conversão no celular">
+    </div>
+  </div>
 </section>
 
-<div class="new-checkout-wrapper">
-    <div class="checkout-grid-top">
-        <div class="learn-box">
-            <h3 class="box-title-red">O QUE VOCÊ VAI APRENDER</h3>
-            <div class="learn-pillars">
-                <div class="learn-pillar-item">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-                    <span>Fundamentos da Conversão</span>
-                </div>
-                <div class="learn-pillar-divider"></div>
-                <div class="learn-pillar-item">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 0-7.54 16.59c.2.25.46.42.77.49l2 .46a2 2 0 0 0 2.22-1.18l.41-.9A2 2 0 0 1 11.66 16h.68a2 2 0 0 1 1.8 1.46l.41.9a2 2 0 0 0 2.22 1.18l2-.46c.3-.07.57-.24.77-.49A10 10 0 0 0 12 2z"></path></svg>
-                    <span>Psicologia do Consumidor</span>
-                </div>
-                <div class="learn-pillar-divider"></div>
-                <div class="learn-pillar-item">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
-                    <span>Copywriting Estratégico</span>
-                </div>
-                <div class="learn-pillar-divider"></div>
-                <div class="learn-pillar-item">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
-                    <span>Construção de Oferta</span>
-                </div>
-                <div class="learn-pillar-divider"></div>
-                <div class="learn-pillar-item">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-                    <span>Aplicação Prática</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="diff-box">
-            <h3 class="box-title-red">COMO APLICAR NA PRÁTICA</h3>
-            <ul class="diff-list-items">
-                <li>
-                    <svg class="check-red-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Estruture ofertas com mais valor percebido.
-                </li>
-                <li>
-                    <svg class="check-red-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Crie páginas que reduzem objeções e aumentam conversão.
-                </li>
-                <li>
-                    <svg class="check-red-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Desenvolva autoridade e posicionamento digital.
-                </li>
-                <li>
-                    <svg class="check-red-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Construa sistemas de atração, relacionamento e vendas.
-                </li>
-            </ul>
-        </div>
+<section>
+  <div class="wrap center">
+    <div class="section-label">A solução</div>
+    <h2 class="section-title" style="margin:0 auto 40px;">Aprenda o método que aumenta suas conversões</h2>
+    <div class="tag-cloud" style="justify-content:center;">
+      <span class="tag hot">Psicologia da Venda</span>
+      <span class="tag hot">Estratégias de Conversão</span>
+      <span class="tag hot">Copywriting Persuasivo</span>
+      <span class="tag hot">Gatilhos Mentais</span>
+      <span class="tag hot">Ofertas Irresistíveis</span>
     </div>
-
-    <div class="main-offer-box">
-        <div class="offer-price-col">
-            <span class="offer-label-red">INVESTIMENTO ÚNICO</span>
-            <div class="offer-big-price">R$ 39,90</div>
-            <span class="offer-sub-installments">acesso digital imediato</span>
-            <div class="badge-launch-pill">Preço de lançamento</div>
-        </div>
-
-        <div class="offer-deliver-col">
-            <div class="deliver-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-                <span>Acesso imediato ao ebook</span>
-            </div>
-            <div class="deliver-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-                <span>Leitura prática e objetiva</span>
-            </div>
-            <div class="deliver-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-                <span>Material 100% digital</span>
-            </div>
-        </div>
-
-        <div class="offer-cta-col">
-            <div class="instant-access-row">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                <div class="instant-access-text">
-                    <strong>LEITURA RÁPIDA</strong>
-                    <span>Conteúdo direto para aplicar sem ficar preso em teoria demais.</span>
-                </div>
-            </div>
-            <div class="instant-access-row">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                <div class="instant-access-text">
-                    <strong>ENTREGA DIGITAL</strong>
-                    <span>Você recebe o acesso assim que o pagamento é aprovado.</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="checkout-grid-bottom">
-        <div class="info-footer-card">
-            <div class="info-footer-icon-circle">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-            </div>
-            <div class="info-footer-content">
-                <h4>COMPROMISSO PEKAI</h4>
-                <p>Todo conteúdo é criado para ser claro, prático e aplicável. Se você aplicar, vai ver diferença na rotina.</p>
-            </div>
-        </div>
-        <div class="info-footer-card">
-            <div class="info-footer-icon-circle">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
-            </div>
-            <div class="info-footer-content">
-                <h4>FOCADO NO QUE IMPORTA</h4>
-                <p>Menos teoria, mais prática. Menos enrolação, mais resultado para sua página.</p>
-            </div>
-        </div>
-    </div>
-
-    <section class="assistant-section">
-    <div class="assistant-box">
-
-        <div class="assistant-header">
-            <span class="section-tag">SUPORTE INTELIGENTE</span>
-            <h2>ASSISTENTE <span>PEKAI</span></h2>
-            <p>
-                Tire dúvidas sobre estratégias, conceitos e aplicações do ebook
-                através do Assistente PekAI.
-            </p>
-        </div>
-
-        <div class="assistant-features">
-
-            <div class="assistant-card">
-                <i class="fa-solid fa-bolt"></i>
-                <h3>Respostas rápidas</h3>
-                <p>Encontre respostas sem perder tempo procurando no material.</p>
-            </div>
-
-            <div class="assistant-card">
-                <i class="fa-solid fa-book-open"></i>
-                <h3>Explicações simplificadas</h3>
-                <p>Entenda os conceitos do ebook de forma clara e objetiva.</p>
-            </div>
-
-            <div class="assistant-card">
-                <i class="fa-solid fa-chart-line"></i>
-                <h3>Aplicação prática</h3>
-                <p>Descubra como aplicar as estratégias no seu projeto ou negócio.</p>
-            </div>
-
-            <div class="assistant-card">
-                <i class="fa-solid fa-headset"></i>
-                <h3>Disponível sempre</h3>
-                <p>Consulte o assistente sempre que precisar durante o aprendizado.</p>
-            </div>
-
-        </div>
-
-        <div class="assistant-action">
-            <a href="#" class="btn-assistant">
-                <i class="fa-solid fa-robot"></i>
-                ACESSAR ASSISTENTE PEKAI
-            </a>
-        </div>
-
-    </div>
+  </div>
 </section>
 
-    <footer class="pki-footer">
-        <div class="pki-footer-brand">
-            <span class="pki-ft-main">PE<span class="text-red">KAI</span></span>
-            <span class="pki-ft-sub">GESTÃO & MARKETING</span>
-        </div>
-        <div class="pki-footer-pitch">
-            CHEGOU A HORA DE TRANSFORMAR VISITANTES EM <span class="text-red font-bold">COMPRADORES.</span>
-            <span class="pki-pitch-sub">Seu acesso fica disponível na hora, sem passos desnecessários.</span>
-        </div>
-        <div class="pki-footer-action">
-            <div class="pki-footer-note">
-                <strong>Acesso imediato via Kiwify</strong>
-                <span>Depois da compra, o material fica liberado para leitura na hora.</span>
-            </div>
-            <div class="kiwify-secure">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                Acesso imediato via Kiwify
-            </div>
-        </div>
-    </footer>
-</div>
+<section id="dentro">
+  <div class="wrap">
+    <div class="section-label">O que tem dentro do ebook</div>
+    <h2 class="section-title">6 módulos para virar o jogo</h2>
+    <p class="section-sub">Estrutura direta, sem enrolação — cada módulo entrega o que você precisa aplicar no mesmo dia.</p>
+    <div class="module-grid">
+      <div class="module-card"><span class="module-num">MÓDULO 01</span><h3>Fundamentos da Conversão</h3></div>
+      <div class="module-card"><span class="module-num">MÓDULO 04</span><h3>Copywriting Estratégico</h3></div>
+      <div class="module-card"><span class="module-num">MÓDULO 02</span><h3>Psicologia do Consumidor</h3></div>
+      <div class="module-card"><span class="module-num">MÓDULO 05</span><h3>Escalando Resultados</h3></div>
+      <div class="module-card"><span class="module-num">MÓDULO 03</span><h3>Construção de Oferta</h3></div>
+      <div class="module-card"><span class="module-num">MÓDULO 06</span><h3>Bônus Exclusivos</h3></div>
+    </div>
+    <div class="bonus-bar">+ Bônus exclusivos: modelos, checklists e templates</div>
+  </div>
+</section>
 
-<script>
-        const navbar = document.querySelector('.navbar');
+<section>
+  <div class="wrap diff-layout">
+    <div>
+      <div class="section-label">Por que este ebook</div>
+      <h2 class="section-title">É diferente?</h2>
+      <p class="section-sub" style="margin-bottom:28px;">A maioria dos materiais fala bonito, mas entrega pouco. Aqui a ideia é simplificar o caminho e deixar a aplicação fácil de enxergar.</p>
+      <div class="diff-list">
+        <div class="row">Clareza na promessa da página.</div>
+        <div class="row">Estrutura que reduz atrito na decisão.</div>
+        <div class="row">Foco em conversão, não em enfeite.</div>
+        <div class="row">Aplicação prática para usar no mesmo dia.</div>
+      </div>
+    </div>
+    <div>
+      <div class="result-cards">
+        <div class="result-card"><div class="label">Mais clareza</div><p>O visitante entende a oferta mais rápido.</p></div>
+        <div class="result-card"><div class="label">Mais foco</div><p>O texto guia a atenção para o que importa.</p></div>
+        <div class="result-card"><div class="label">Mais ação</div><p>A decisão fica menos travada e mais natural.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        // Controla o surgimento inteligente do menu ao rolar a página
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 150) {
-                navbar.classList.add('scroll-active');
-            } else {
-                navbar.classList.remove('scroll-active');
-            }
-        });
+<section id="oferta">
+  <div class="wrap center">
+    <div class="section-label">Investimento</div>
+    <h2 class="section-title" style="margin:0 auto 8px;">Acesso rápido, aplicação imediata</h2>
+    <p class="section-sub">Compra simples, entrega digital e leitura prática para aplicar no mesmo dia.</p>
 
-        // FORÇA A ANIMAÇÃO DE FLUIDEZ VIA JAVASCRIPT (Garante que funcione em tudo)
-        document.querySelector('a[href="#topo"]').addEventListener('click', function(e) {
-            e.preventDefault(); // Impede o navegador de dar o "pulo seco"
+    <div class="offer-box">
+      <div class="offer-flag">🔥 Oferta de lançamento</div>
+      <div class="offer-was">De R$ 59,90</div>
+      <div class="offer-now-label">Por apenas</div>
+      <div class="offer-now display">R$ <span>39,90</span></div>
+      <div class="offer-sub">investimento único no acesso ao ebook</div>
+      <div class="offer-includes">
+        <div class="row">Acesso imediato</div>
+        <div class="row">Atualizações futuras</div>
+        <div class="row">Material 100% digital</div>
+      </div>
+      <a href="LINK_KIWIFY_AQUI" class="btn-primary" style="width:100%;">Quero meu acesso agora</a>
+      <div class="offer-note">Pagamento 100% seguro via Kiwify · Oferta por tempo limitado</div>
+    </div>
+  </div>
+</section>
 
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth' // Força o deslize suave na subida
-            });
-        });
-    </script>
+<section>
+  <div class="wrap center">
+    <div class="section-label">O que você vai aprender</div>
+    <h2 class="section-title" style="margin:0 auto 40px;">Conhecimento direto ao ponto</h2>
+    <div class="learn-grid">
+      <div class="learn-card"><p>Fundamentos da Conversão</p></div>
+      <div class="learn-card"><p>Psicologia do Consumidor</p></div>
+      <div class="learn-card"><p>Copywriting Estratégico</p></div>
+      <div class="learn-card"><p>Construção de Oferta</p></div>
+      <div class="learn-card"><p>Aplicação Prática</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="assistente">
+  <div class="wrap assistant-layout">
+    <div>
+      <span class="assistant-badge">Suporte inteligente</span>
+      <h2 class="section-title">Assistente PeKai</h2>
+      <p class="section-sub" style="margin-bottom:32px;">Tire dúvidas sobre estratégias, conceitos e aplicações do ebook através do Assistente PeKai.</p>
+      <a href="LINK_ASSISTENTE_AQUI" class="btn-primary">Acessar Assistente PeKai</a>
+    </div>
+    <div class="assistant-feat">
+      <div class="row"><h4>Respostas rápidas</h4><p>Encontre respostas sem perder tempo procurando no material.</p></div>
+      <div class="row"><h4>Explicações simplificadas</h4><p>Entenda os conceitos do ebook de forma clara e objetiva.</p></div>
+      <div class="row"><h4>Aplicação prática</h4><p>Descubra como aplicar as estratégias no seu projeto ou negócio.</p></div>
+      <div class="row"><h4>Disponível sempre</h4><p>Consulte o assistente sempre que precisar durante o aprendizado.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta" style="border-bottom:none;">
+  <div class="wrap">
+    <h2 class="display">Chegou a hora de transformar<br>visitantes em <span class="accent">compradores.</span></h2>
+    <p>Seu acesso fica disponível na hora, sem passos desnecessários.</p>
+    <a href="LINK_KIWIFY_AQUI" class="btn-primary">Quero meu acesso agora</a>
+    <div class="guarantee">Acesso imediato via Kiwify · Depois da compra, o material fica liberado para leitura na hora.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="logo-f display">PEKAI <span style="color:#c8102e;">·</span> GESTÃO &amp; MARKETING</span>
+    © 2026 — Todos os direitos reservados
+  </div>
+</footer>
+
 </body>
 </html>
